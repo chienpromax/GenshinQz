@@ -1,0 +1,54 @@
+<!----- dangky ======= -->
+<section class="dangky py-5 sec-2 show-animate">
+  <video autoplay muted loop playsinline src="image/video/haianhem.mp4"> </video>
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-md-4"></div>
+      <div class="col-lg-4 offset-lg-3 dangky-back">
+        <form class="dangky-form" name="dangkyform" novalidate>
+          <h2>Đăng Ký Tài Khoản</h2>
+          <div class="line-container">
+            <div class="line"></div>
+          </div>
+          <input name="userName" ng-model="tenDangNhap" maxlength="15" type="text" class="form-control"
+            placeholder="Tên người dùng" required>
+          <span style="color: rgb(78,164,220); float: left; margin: 10px;"
+            ng-show="dangkyform.userName.$error.required && dangkyform.userName.$touched">
+            Vui lòng nhập tên đăng nhập
+          </span>
+          <input name="Pass" ng-minlength="5" ng-maxlength="15" ng-model="matKhau" type="password" class="form-control"
+            placeholder="Mật khẩu (5 đến 15 ký tự)" required>
+          <span style="color: rgb(78,164,220); float: left; margin: 10px;"
+            ng-show="dangkyform.Pass.$error.required && dangkyform.Pass.$touched">
+            Vui lòng nhập mật khẩu
+          </span>
+          <span style="color: rgb(78,164,220); float: left; margin: 10px;" ng-show="dangkyform.Pass.$error.minlength">
+            Mật khẩu phải có ít nhất 5 ký tự
+          </span>
+          <span style="color: rgb(78,164,220); float: left; margin: 10px;" ng-show="dangkyform.Pass.$error.maxlength">
+            Mật khẩu không được nhiều hơn 15 ký tự
+          </span>
+          <input name="Pass1" ng-model="xacNhanMatKhau" type="password" class="form-control"
+            placeholder="Xác nhận mật khẩu" required>
+          <span style="color: rgb(78,164,220); float: left; margin: 10px;"
+            ng-show="dangkyform.Pass1.$error.required && dangkyform.Pass1.$touched">
+            bạn cần xác nhân lại mật khẩu
+          </span>
+          <input name="Email" ng-model="email" type="text" id="email" name="email" class="form-control"
+            placeholder="Email" required required>
+          <span style="color: rgb(78,164,220); float: left; margin: 10px;"
+            ng-show="dangkyform.Email.$error.required && dangkyform.Email.$touched">
+            Vui lòng nhập Email
+          </span>
+          <div class="text-center">
+            <button class="btn" ng-click="dangKy()">Xác nhận</button>
+          </div>
+          <div class="row dangky-link">
+            <div class="col-md-4"><a href="#!forgotPassword">Quên mật khẩu</a></div>
+            <div class="col-md-4 offset-md-4"><a href="#!login">Đăng Nhập ngay</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

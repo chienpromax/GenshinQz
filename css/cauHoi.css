@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body {
+    margin: 0;
+    background: linear-gradient(
+      -110deg,
+      rgb(132, 190, 213), rgb(129, 132, 231),
+      rgb(207, 138, 239), rgb(235, 145, 202),
+      rgb(255, 255, 255), rgb(213, 213, 213),
+      rgb(171, 171, 171), rgb(163, 163, 163),
+      rgb(242, 124, 124), rgb(241, 181, 112),
+      rgb(220, 249, 142), rgb(134, 236, 153),
+      rgb(171, 171, 171), rgb(163, 163, 163),
+      rgb(242, 124, 124), rgb(241, 181, 112),
+      rgb(220, 249, 142), rgb(134, 236, 153),
+      rgb(132, 190, 213), rgb(129, 132, 231),
+      rgb(207, 138, 239), rgb(235, 145, 202),
+      rgb(255, 255, 255), rgb(213, 213, 213),
+      rgb(171, 171, 171), rgb(163, 163, 163),
+      rgb(242, 124, 124), rgb(241, 181, 112),
+      rgb(220, 249, 142), rgb(134, 236, 153)
+    );
+    background-size: 500% 500%;
+    animation: doimau 120s linear infinite;
+  } */
+  .cauhoi {
+    background-color: rgb(231, 231, 231);
+    /* margin: 0;
+    background: linear-gradient(
+      -110deg,
+      rgb(93, 94, 94), rgb(162, 162, 162),
+      rgb(186, 186, 186), rgb(152, 152, 152),
+      rgb(255, 255, 255), rgb(213, 213, 213),
+      rgb(171, 171, 171), rgb(163, 163, 163),
+      rgb(212, 212, 212), rgb(131, 131, 131),
+      rgb(99, 99, 99), rgb(178, 178, 178),
+      rgb(171, 171, 171), rgb(163, 163, 163),
+      rgb(199, 199, 199), rgb(224, 224, 224),
+      rgb(151, 151, 151), rgb(195, 195, 195),
+      rgb(139, 139, 139), rgb(159, 159, 160),
+      rgb(216, 216, 216), rgb(192, 192, 192),
+      rgb(255, 255, 255), rgb(213, 213, 213),
+      rgb(171, 171, 171), rgb(163, 163, 163),
+      rgb(182, 182, 182), rgb(121, 121, 121),
+      rgb(193, 193, 193), rgb(32, 32, 32)
+    );
+    background-size: 500% 500%;
+    animation: doimau 120s linear infinite; */
+  }
+  
+  @keyframes doimau {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 25% 50%;
+    }
+    50% {
+      background-position: 50% 50%;
+    }
+    75% {
+      background-position: 75% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+/* ========= cauhoi ========= */
+/* .cauhoi{
+    background: url(/image/contact1.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+    overflow-x: hidden;
+} */
+.line-cauhoi{
+    height: 5px;
+    width: 50%;
+    background-color: rgb(255, 0, 0);
+    display: inline-block;
+}
+.star{
+    text-align: end;
+    color: orange;
+}
+.cauhoi .card{
+    border: none;
+    border-radius: 0;
+    /* cursor: pointer; */
+    background-color: transparent;
+}
+.card-body {
+    margin: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+.cauhoi .card-body{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(252, 132, 4);
+    border-radius: 10px;
+}
+.card-body h5{
+    font-weight: 400;
+    margin-top: 10px;
+    font-family: 'DM Serif Display', serif;
+}
+.cauhoi img{
+    width: 100%; 
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+.cauhoi img:hover{
+    transform: scale(1.05) translatey(-6px);
+    transition: transform 0.4s ease;
+}
+a .btn-bd{
+    margin: 10px 0 10px 0;
+}
+.btn-bd{
+    height: 40px;
+    width: 70%;
+    border: none;
+    outline: none;
+    background-color: rgb(197,102,35);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'DM Serif Display', serif;
+    border-radius: 20px;
+    margin: 0 auto;
+    transition: all 0.5s;
+
+}
+.btn-bd:hover{
+    outline: none;
+    border: 3px solid rgb(197,102,35); 
+    color: rgb(197,102,35);
+    background: transparent;
+    border-radius: 20px
+}
+.controller1{
+    color: rgb(255, 161, 10);
+    font-size: 40px;
+}
+.controller1 span{
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+}
+.btn-Qs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

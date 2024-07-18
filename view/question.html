@@ -1,0 +1,121 @@
+
+<section class="cauhoi" ng-controller="ctrlNhanVat">
+    <div class="container">
+      <div class="row text-center py-5">
+        <div class="col-lg-6 m-auto">
+          <h1>Danh sách câu hỏi về nhân vật</h1>
+          <div class="line-cauhoi"></div>
+          <h5>Bắt đầu thử thách bản thân</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4" ng-repeat="sub in list_cauHoi.slice(currentIndex, currentIndex + 3)">
+          <div class="card p-2">
+            <div class="card-body">
+              <img ng-src="image/cauhoi/{{sub.Logo}}" class="img-fluid pb-1" alt="{{sub.Name}} logo">
+              <h5>Làm ngay bộ câu hỏi về {{sub.Name}} để biết thêm về nhân vật này</h5>
+              <h5>Thử sức với 10p Làm bài</h5>
+              <a ng-click="loged()" href="#!lamBai/{{sub.Id}}/{{sub.Name}}"><button class="btn-bd">Kiểm tra</button></a>
+              <div class="star">
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4" ng-repeat="sub in list_cauHoi.slice(currentIndex + 3, currentIndex + 6)">
+          <div class="card p-2">
+            <div class="card-body">
+              <img ng-src="image/cauhoi/{{sub.Logo}}" class="img-fluid pb-1" alt="{{sub.Name}} logo">
+              <h5>Làm ngay bộ câu hỏi về {{sub.Name}} để biết thêm về nhân vật này</h5>
+              <h5>Thử sức với 10p Làm bài</h5>
+              <a ng-click="loged()" href="#!lamBai/{{sub.Id}}/{{sub.Name}}"><button class="btn-bd">Kiểm tra</button></a>
+              <div class="star">
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center py-2">
+        <div class="container">
+          <div class="controller1">
+            <span ng-click="firstImage()"><i class="bi bi-chevron-double-left"></i></span>
+            <span ng-click="prevImage()"><i class="bi bi-chevron-left"></i></span>
+            <span ng-click="randomImage()"><i class="bi bi-arrows-fullscreen"></i></span>
+            <span ng-click="nextImage()"><i class="bi bi-chevron-right"></i></span>
+            <span ng-click="lastImage()"><i class="bi bi-chevron-double-right"></i></span>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+  <!----- cauhoiMap ======= -->
+  <section class="cauhoi" ng-controller="ctrlMap">
+    <div class="container">
+      <div class="row text-center py-5">
+        <div class="col-lg-6 m-auto">
+          <h1>Danh sách câu hỏi về bản đồ</h1>
+          <div class="line-cauhoi"></div>
+          <h5>Bắt đầu thử thách bản thân</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4" ng-repeat="sub in list_cauHoi.slice(currentIndex, currentIndex + 3)">
+          <div class="card p-2">
+            <div class="card-body">
+              <img ng-src="image/cauhoi/{{sub.Logo}}" class="img-fluid pb-1" alt="{{sub.Name}} logo">
+              <h5>Làm ngay bộ câu hỏi về {{sub.Name}} để biết thêm về khu vực này</h5>
+              <h5>Thử sức với 10p Làm bài</h5>
+              <a ng-click="loged()" href="#!lamBai/{{sub.Id}}/{{sub.Name}}"><button class="btn-bd">Bắt đầu</button></a>
+              <div class="star">
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4" ng-repeat="sub in list_cauHoi.slice(currentIndex + 3, currentIndex + 6)">
+          <div class="card p-2">
+            <div class="card-body">
+              <img ng-src="image/cauhoi/{{sub.Logo}}" class="img-fluid pb-1" alt="{{sub.Name}} logo">
+              <h5>Làm ngay bộ câu hỏi về {{sub.Name}} để biết thêm về khu vực này</h5>
+              <h5>Thử sức với 10p Làm bài</h5>
+              <a ng-click="loged()" href="#!lamBai/{{sub.Id}}/{{sub.Name}}"><button class="btn-bd">Bắt đầu</button></a>
+              <div class="star">
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center py-2">
+        <div class="container">
+          <div class="controller1">
+            <span ng-click="firstImage()"><i class="bi bi-chevron-double-left"></i></span>
+            <span ng-click="prevImage()"><i class="bi bi-chevron-left"></i></span>
+            <span ng-click="randomImage()"><i class="bi bi-arrows-fullscreen"></i></span>
+            <span ng-click="nextImage()"><i class="bi bi-chevron-right"></i></span>
+            <span ng-click="lastImage()"><i class="bi bi-chevron-double-right"></i></span>
+          </div>
+        </div>
+      </div>
+  </section>

@@ -1,0 +1,36 @@
+<!----- login ======= -->
+<section class="login py-5 sec-2 show-animate">
+  <video autoplay muted loop playsinline src="image/video/login.mp4"> </video>
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-md-4"></div>
+      <div class="col-lg-4 offset-lg-3 login-back">
+        <form class="login-form" name="loginForm" novalidate>
+          <h2>Đăng Nhập Tài Khoản</h2>
+          <div class="line-container">
+            <div class="line"></div>
+          </div>
+          <input name="name" type="text" ng-model="username" class="form-control" placeholder="Tên người dùng/Email"
+            required>
+          <span style="color: rgb(78,164,220); float: left; margin: 10px;"
+            ng-show="loginForm.name.$error.required && loginForm.name.$touched">
+            Vui lòng nhập tên người dùng
+          </span>
+          <input name="pass" type="password" ng-model="password" class="form-control" placeholder="Mật khẩu"
+          required>
+          <span style="color: rgb(78,164,220); float: left; margin: 10px;"
+            ng-show="loginForm.pass.$error.required && loginForm.pass.$touched">
+            Vui lòng nhập mật khẩu
+          </span>
+          <div class="text-center">
+            <button type="button" ng-click='login()' class="btn">Xác nhận</button>
+          </div>
+          <div class="row login-link">
+            <div class="col-md-4"><a href="#!forgotPassword">Quên mật khẩu</a></div>
+            <div class="col-md-4 offset-md-4"><a href="#!register">Đăng kí ngay</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

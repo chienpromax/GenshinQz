@@ -1,0 +1,264 @@
+<!-- header======= -->
+<section class="main sec-1 show-animate" id="main" ng-controller="aboutController">
+    <div class="container py-5">
+      <div class="row py-5">
+        <div class="col-lg-7 py-5 text-center about-body">
+          <h1 id="H1" class="pt-5 animate">Nàng Bướm Đêm <br> Trên Đóa Hoa Bỉ Ngạn !</h1>
+          <div class="line-header animate"></div>
+          <button class="btn-see_more mt-3 animate" onclick="openMore()">Xem thêm</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about======== -->
+  <section class="about py-5 sec-2 show-animate"  ng-controller="hieuUngChu">
+    <video autoplay muted loop playsinline src="image/about.mp4"> </video>
+    <div class="container py-5 container-about">
+      <div class="row py-5">
+        <!-- <div class=" col-lg-6 py-5 offset-lg-5 col-md-6 col-sm-12 col-12 "> -->
+        <div class="col-lg-7 py-5 offset-lg-5">
+          <p class="animate" ng-init="showElements()">Genshin inpact</p>
+          <h1 class="animate">Giới Thiệu về Genshin inpact!</h1>
+          <div class="line-about my-4 animate"></div>
+          <p class="about-game animate">Genshin Impact - một trải nghiệm nhập vai độc đáo, hấp dẫn với đồ họa tuyệt
+            vời và hệ thống chiến đấu đa dạng. Khám phá thế giới mở rộng,
+            thu thập nhóm nhân vật đa dạng và đối mặt với thách thức để giải cảnh ảnh
+            mới trong một cuộc phiêu lưu kỳ diệu.</p>
+          <button class="btn-about mt-4 animate" onclick="openWindows()"><i class="bi bi-windows"> Window</i></button>
+          <button class="btn-about mt-4 animate" onclick="openAppStore()"><i class="bi bi-apple"></i> App store</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--====== welcome======= -->
+  <section class="welocome text-center pb-5">
+    <div class="container py-5">
+      <div class="row py-5 text-while">
+        <div class="col-lg-6 m-auto">
+          <p class="m-0">Genshin impact</p>
+          <h1>Welcome To GenshinQZ</h1>
+          <div class="line-welcome my-4"></div>
+          <p>GenshinQZ với các câu hỏi thú vị xoay quanh thế giới của Genshin Impact.
+            Kiểm tra và nâng cao kiến thức một cách hấp dẫn,
+            đồng thời thách thức bè trong một trải nghiệm nhanh chóng</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <!-- <span><i class="bi bi-person-bounding-box"></i></span> -->
+              <div id="characterCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="image/nhanvat.jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/nhanvat2.jfif" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/nhanvat3.jfif" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/nhanvat4.jfif" alt="">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#characterCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#characterCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <h2>Nhân Vật</h2>
+              <p style="font-size: 16px;" >khám phá đội ngũ nhân vật đa dạng của Genshin Impact qua các câu hỏi
+                sắc bén. Thách thức và nâng cao kiến thức của về tính cách, kỹ năng,
+                và câu chuyện của mỗi nhân vật trong thế giới huyền bí này</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <!-- <span><i class="bi bi-geo-alt-fill"></i></span> -->
+
+              <div id="mapCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="image/map.jfif" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/map2.jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/map5.jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/map4.jpg" alt="">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mapCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mapCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <h2>Bản đồ</h2>
+              <p style="font-size: 16px;">là chìa khóa để hiểu sâu về thế giới đa dạng của Genshin Impact.
+                Kiểm tra và nâng cao kiến thức về địa điểm, địa lý, và bí mật trong game,
+                mang đến trải nghiệm thú vị</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <!-- <span><i class="bi bi-x-diamond-fill"></i></span> -->
+
+              <div id="storyCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="image/cottruyen.jfif" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/cottruyen2.jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/cottruyen3.jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/cottruyen4.jfif" alt="">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#storyCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#storyCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <h2>Cốt truyện</h2>
+              <p style="font-size: 16px;">một hành trình hấp dẫn, dẫn dắt người chơi khám phá sâu sắc cốt truyện độc đáo của
+                Genshin Impact. Thách thức và làm giàu kiến thức với những sự kiện,
+                nhân vật và bí mật kịch tính.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--====== tinh nang ======= -->
+  <section class="tinhNang text-center" ng-controller="tinhNang">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-7 m-auto">
+          <h1>Tính Năng Đặc Sắc</h1>
+          <div class="line-tinhNang my-4 m-auto"></div>
+          <p class="mb-4">Tính Năng Đặc Sắc của Genshin Impact là sự kết hợp tuyệt vời giữa đồ họa nghệ thuật đỉnh cao,
+            một thế giới mở rộng đầy ấn tượng và hệ thống chiến đấu linh hoạt. Các nhân vật đa dạng với kỹ năng
+            độc đáo cùng với cốt truyện phong phú tạo ra một trải nghiệm nhập vai độc đáo và cuốn hút,
+            đặt Genshin Impact vào vị trí hàng đầu của thế giới game hiện nay</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 m-auto containerTN">
+          <div class="panel active" style="background-image: url(/image/tinhnang/main.jpg);"></div>
+          <div class="panel " style="background-image: url(/image/tinhnang/yeamiko.jpg);"></div>
+          <div class="panel " style="background-image: url(/image/tinhnang/nuoc.jpg);"></div>
+          <div class="panel " style="background-image: url(/image/tinhnang/eula.jpg);"></div>
+          <div class="panel " style="background-image: url(/image/tinhnang/zongly.jpg);"></div>
+          <div class="panel " style="background-image: url(/image/tinhnang/sumeru.jpg);"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--====== footer ======= -->
+  <section class="news py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-9 m-auto text-center">
+          <h1>Theo dõi tôi để nhận thông tin mới nhất</h1>
+          <input type="text" class="px-3" placeholder="Hãy nhập Email của">
+          <button class="btn-follow">OK</button>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-lg-11 m-auto">
+          <div class="row">
+            <div class="col-lg-3 py-3 info">
+              <h2 class="pb-3">Menu</h2>
+              <a class="menu" href="#!/" onclick="scrollToTop()">Home</a>
+              <a class="menu" href="#!about">Giới thiệu</a>
+              <a class="menu" href="#!question">Câu hỏi</a>
+              <a class="menu" href="#!contact">Liên hệ</a>
+              <a class="menu" href="#!login">Đăng nhập</a>
+            </div>
+            <div class="col-lg-3 py-3 info">
+              <h2 class="pb-3">Kĩ Năng</h2>
+              <a class="menu" href="https://www.java.com/en/">Java</a>
+              <a class="menu" href="https://spring.io/projects/spring-boot/">Spring boot</a>
+              <a class="menu" href="https://getbootstrap.com/">Bootstrap</a>
+              <a class="menu" href="https://angular.io/">Angular</a>
+              <a class="menu" href="#">JavaScript</a>
+              <a class="menu" href="#">SQL Sever</a>
+              <a class="menu" href="#">Git</a>
+              <a class="menu" href="#">CSS</a>
+              <a class="menu" href="#">HTML</a>
+            </div>
+            <div class="col-lg-3 py-3 info">
+              <h2 class="pb-3">Địa chỉ</h2>
+              <p>??? Nguyễn Thị Thập, Thanh Khê Tây, Liên Chiểu, Đà Nẵng, Việt Nam</p>
+              <br>
+              <p>SĐT : 0987654321</p>
+              <p>Email: xuanchient033@gmail.com</p>
+            </div>
+            <div class="col-lg-3 py-3 info">
+              <h2 class="pb-3">Liên hệ</h2>
+              <span>
+                <a class="info-me" href="https://www.facebook.com/profile.php?id=100050139920988" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </span>
+              <span>
+                <a class="info-me" href="https://github.com/chienpromax" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </span>
+              <span>
+                <a class="info-me" href="https://twitter.com/chien_cham_chi" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+              </span>
+              <span>
+                <a class="info-me" href="https://www.facebook.com/profile.php?id=100050139920988" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="copyRight">
+      <p class="text-center copyRight">copyRight ©2024 All right reserved | trang web này được tạo bởi ChiếnChămChỉ</p>
+    </div>
+  </section>

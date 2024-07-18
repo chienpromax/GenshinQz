@@ -1,0 +1,56 @@
+
+/* ========= contact ========= */
+.contact .card{
+    background-color: hsla(0, 0%, 98%, 0.7);
+}
+.card-body{
+    background-color: transparent;
+}
+.contact{
+    background: url(/image/contact.png);
+    background-size: cover;
+    height: 110vh;
+    width: 100%;
+}
+.contact2{
+    background: url(/image/contact1.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.card p{
+    font-weight: 500;
+}
+.line-contact{
+    background-color: rgb(197,102,35);
+    height: 3px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.span{
+    font-size: 40px;
+    color: chocolate;
+}
+.label-contact{
+    margin: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contact input{
+    background-color: hsla(0, 0%, 100%, 0.8);
+    border: 2px solid black;
+    color: rgb(197,102,35);
+    font-weight: 500;
+    font-size: 20px;
+}
+.contact textarea{
+    background-color: hsla(0, 0%, 100%, 0.8);
+    border: 2px solid black;
+    color: rgb(197,102,35);
+    font-weight: 500;
+    font-size: 20px;
+}

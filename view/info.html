@@ -1,0 +1,31 @@
+<section class="dangky py-5 sec-2 show-animate">
+  <video autoplay muted loop playsinline src="image/video/haianhem.mp4"></video>
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-md-4"></div>
+      <div class="col-lg-4 offset-lg-3 dangky-back">
+        <form class="dangky-form">
+          <h2>Sửa Đổi Tài Khoản</h2>
+          <div class="line-container">
+            <div class="line"></div>
+          </div>
+          <label for="">Tên người dùng</label>
+          <input type="text" ng-model="user.username" class="form-control" placeholder="Tên người dùng">
+          <label for="">Email</label>
+          <input type="text" ng-model="user.email" class="form-control" placeholder="Email">
+          <label for="">Ngày sinh</label>
+          <input type="date" ng-model="user.birthday" class="form-control" placeholder="Ngày sinh">
+          <label for="">Điểm</label>
+          <input type="text" ng-model="user.poin" class="form-control" placeholder="Làm bài ngay" readonly>
+          <div class="text-center">
+            <button class="btn" ng-click="confirmEdit()">Xác nhận</button>
+          </div>
+          <div class="row dangky-link">
+            <div class="col-md-4"><a href="#!forgotPassword">Quên mật khẩu</a></div>
+            <div class="col-md-4 offset-md-4"><a href="#!login">Đăng Nhập ngay</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

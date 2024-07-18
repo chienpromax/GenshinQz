@@ -1,0 +1,99 @@
+
+/* ========= lam Bai ========= */
+.card{
+    border: 3px solid rgb(197,102,35);
+    padding: 0;
+}
+.card-header{
+    background-color: rgb(255, 255, 255);
+}
+.card-header label{
+    text-align: center;
+    /* font-family: 'Pacifico', cursive; */
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+}
+.btn-start{
+    width: 150px;
+    /* height: 100%; */
+    background-color: rgb(236, 132, 57);
+    color: white;
+    border: 3px solid rgb(197,102,35); 
+    border-radius: 10px;
+    font-size: 25px;
+    transition: all 0.7s;
+}
+.btn-start:hover{
+    outline: none;
+    border: 3px solid rgb(197,102,35); 
+    color: rgb(197,102,35);
+    background: transparent;
+    border-radius: 10px
+}
+.card-header button{
+    width: 120px;
+    height: 100%;
+    background-color: rgb(236, 132, 57);
+    color: white;
+    border: 3px solid rgb(197,102,35); 
+    border-radius: 10px;
+    font-size: 25px;
+    transition: all 0.7s;
+}
+.card-header button:hover{
+    outline: none;
+    border: 3px solid rgb(197,102,35); 
+    color: rgb(197,102,35);
+    background: transparent;
+    border-radius: 10px
+}
+.card-header1{
+    margin: 20px 0 0 10px;
+    display: flex;
+    align-items: center; 
+    /* justify-content: center; */
+}
+.card-header1 img{
+     height: 70px;
+     align-items: center;
+}
+.card-header1 p{
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+.card-body{
+    font-weight: 500;
+    font-size: 20px;
+}
+.card-footer{
+    background-color: rgb(255, 255, 255)
+}
+.card-footer button{
+    width: 120px;
+    /* height: 100%; */
+    background-color: rgb(236, 132, 57);
+    color: white;
+    border: 3px solid rgb(197,102,35); 
+    border-radius: 10px;
+    font-size: 25px;
+    transition: all 0.7s;
+    margin-right: 5px;
+}
+.card-footer button:hover{
+    outline: none;
+    border: 3px solid rgb(197,102,35); 
+    color: rgb(197,102,35);
+    background: transparent;
+    border-radius: 10px
+}
+.card-footer label{
+    text-align: center;
+    /* font-family: 'Pacifico', cursive; */
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(255, 0, 0);
+}

@@ -1,0 +1,97 @@
+<!-- ---- Làm Bài ======= -->
+<hr>
+<section class="lamBai">
+  <div class="container">
+    <div class="row" ng-show="!inProgess">
+      <div class="col text-center">
+        <h3>Bắt đầu bài kiểm tra</h3>
+        <button class="btn-start mx-auto my-5" ng-click="start()">Bắt đầu</button>
+      </div>
+    </div>
+    <div class="row py-2" ng-show="inProgess">
+      <div class="row" ng-show="quizOver">
+        <div class="col text-center">
+          <h3>bài kiểm tra kết thúc</h3>
+          <button class="btn-start mx-auto my-5" ng-click="reset()">làm lại</button>
+        </div>
+      </div>
+      <div ng-show="!quizOver">
+        <div class="card">
+          <div class="card-header text-center">
+            <button class="float-start" ng-click="endQuestion()">Kết thúc</button>
+            <label for=""><i class="bi bi-clock-history"></i>  {{formatTime(timeLeft)}}</label>
+            <label class="float-end" for="">Đã làm {{id}}/10</label>
+          </div>
+          <div class="card-header1">
+            <img src="/image/paimon.ico" alt="">
+            <p>&nbsp; Nhân vật {{tenNhanVat}}</p>
+          </div>
+          <hr>
+          <div class="card-body">
+            <p for="">{{question}}</p>
+            <div ng-repeat="option in options">
+              <input type="radio" ng-model="selectedOption" checked name="answer" value="{{option.Id}}"> &nbsp;
+              {{option.Text}}<br>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button ng-show="answerMode" class="float-start" ng-click="checkAnswer()">Chọn</button>
+            <span ng show="correctAns"></span>
+            <button ng-show="!answerMode" class="float-start" ng-click="nextQuestion()">Tiếp theo</button>
+          </div>
+          <div class="card-footer text-center">
+            <label class="text-center" for="">Điểm {{score}}/10</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------ Làm Bài ======= -->
+<!-- <hr>
+<section class="lamBai">
+  <div class="container">
+    <div class="row" ng-show="!inProgess">
+      <div class="col text-center">
+        <h3>Bắt đầu bài kiểm tra</h3>
+        <button class="btn-start mx-auto my-5" ng-click="start()">Bắt đầu</button>
+      </div>
+    </div>
+    <div class="row py-2" ng-show="inProgess">
+      <div class="row" ng-show="quizOver">
+        <div class="col text-center">
+          <h3>bài kiểm tra kết thúc</h3>
+          <button class="btn-start mx-auto my-5" ng-click="reset()">làm lại</button>
+        </div>
+      </div>
+      <div ng-show="!quizOver">
+        <div class="card">
+          <div class="card-header text-center">
+            <button class="float-start" ng-click="endQuestion()">Kết thúc</button>
+            <label for=""><i class="bi bi-clock-history"></i>  {{formatTime(timeLeft)}}</label>
+            <label class="float-end" for="">Đã làm {{id}}/10</label>
+          </div>
+          <div class="card-header1">
+            <img src="/image/paimon.ico" alt="">
+            <p>&nbsp; Nhân vật {{tenNhanVat}}</p>
+          </div>
+          <hr>
+          <div class="card-body">
+            <p for="">{{question}}</p>
+            <div ng-repeat="option in options">
+              <input type="radio" ng-model="selectedOption" checked name="answer" value="{{option.Id}}"> &nbsp;
+              {{option.Text}}<br>
+          </div>
+          </div>
+          <div class="card-footer btn-Qs">
+            <button class="" ng-click="priveQuestion()"><</button>
+            <button class="btncheck" ng-click="checkAnswer()">Chọn</button>
+            <span ng show="correctAns"></span>
+            <button class="" ng-click="nextQuestion()">></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
